@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="app.js" defer type="module"></script>
+    <link rel="stylesheet" href="./alunos-ds.css">
     <title>Lion School</title>
 </head>
 
@@ -21,23 +20,36 @@
                 <img src="./img/logo-image.svg" alt="Logo Lion School">
                 <h1>Lion <br> School</h1>
             </div>
-            <div class="sair">
-                <button class="botao-sair">
+            <div class="voltar">
+                <button class="botao-voltar">
                     <img src="./img/sair.svg" alt="">
                 </button>
-                <h1>Sair</h1>
+                <h1>Voltar</h1>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container-main" id="container-main">
-            <div class="container">
-                <h2>Escolha um <span>curso</span> <br> para gerenciar</h2>
-                <img src="./img/devices.svg" alt="">
-            </div>
-            <img src="./img/studant.svg" alt="">
-            <div class="botoes" id="botoes">
+        <div class="container-main">
+            <div class="barra">
+                <div class="container-status">
+                    <select id="status" name="status">
+                        <option value="status">Status</option>
+                        <option value="finalizado">Finalizado</option>
+                        <option value="cursos">Cursos</option>
+                    </select>
+                </div>
+                <div class="legenda">
+                    <h4>LEGENDA</h4>
+                    <div class="cursando">
+                        <img src="./img/legenda-azul.svg" alt="">
+                        <p>Cursando</p>
+                    </div>
+                    <div class="finalizado">
+                        <img src="./img/legenda-amarela.svg" alt="">
+                        <p>Finalizado</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -75,6 +87,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

@@ -45,7 +45,7 @@ header{
     width: 60px;
 }
 
-.sair{
+.voltar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,82 +53,74 @@ header{
     padding-right: 30px;
 }
 
-.botao-sair{
+.botao-voltar{
     background-color: var(--primeira-cor);
     border: none;
 }
 
-.sair h1{
+.voltar h1{
     font-size: 24px;
     color: white;
     font-weight: normal; 
 }
 
-.botao-sair img{
+.botao-voltar img{
     width: 40px;
 }
 
 
 /* Main */
-main{
-    background-color: white;
-}
-
 .container-main{
+    height: 100dvh;
+}
+
+.barra{
+    background-color: #BCC2E5;
+    height: 50px;
     display: flex;
-    height: 75dvh;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
-    gap: 60px;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-.container h2{
-    font-size: 60px;
-    font-weight: lighter; 
-}
-
-.container span{
+    align-items: center;
+    justify-content: space-between;
     color: var(--primeira-cor);
-    font-weight: bold;
 }
 
-.container img{
-    width: 500px;
-}
-
-.botoes {
+.legenda{
     display: flex;
-    flex-direction: column;
-    gap: 80px;
+    flex-direction: row;
+    gap: 25px;
+    margin: 25px;
 }
 
-.botao-cursos {
+.legenda img{
+    width: 20px;
+}
+.legenda h4{
+    font-weight: normal;
+}
+
+.cursando {
+    display: flex;
+    flex-direction: row;
+}
+
+.finalizado {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-status {
+    margin: 25px;
+}
+
+#status {
+    border: none;
+    background-color: #BCC2E5;
+    color: var(--primeira-cor);
+}
+
+option {
     background-color: var(--primeira-cor);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    width: 400px;
-    height: 200px;
-    border: none;
-    box-shadow: 10px 10px 5px #3347B080;
-}
-
-.imagem{
-    width: 96px;
-}
-
-.p{
-    font-size: 64px;
 }
 
 
